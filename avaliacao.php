@@ -49,7 +49,8 @@
 </head>
 <body>
     <form method="get" action="processar.php">
-        <h3>Como você avalia o nosso sistema?</h3>
+    <h4 style="color:red; text-align: center">Agendamento realizado com sucesso!</h4>
+        <h3 style="text-align: center">Como você avalia o nosso sistema?</h3>
         <p>
             <select name="nota">
                 <option value="3">Muito Bom &#128516;</option>

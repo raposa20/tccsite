@@ -30,7 +30,10 @@
     <form method="get" action="agendar.php" class="login-form">
         <h3>Agendamento</h3>
         <input type="address" placeholder="Seu Endereço" class="box" name="endereco">
-        <input type="address" placeholder="Material Reciclado" class="box" name="material">
+        <select name="material" class="box">
+                <option value="Óleo">óleo</option>
+                <option value="Lixo Eletônico">Lixo Eletrônico</option>
+            </select>
         <input type="date" placeholder="Enter your date" class="box" name="data">
             
         </div>

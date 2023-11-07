@@ -11,11 +11,15 @@ $data = $_GET['data'];
 $stmt = "insert into tbagendamento values(null,'$endereco','$material','$data');";
 
 //Executando a instrução SQL
-mysqli_query($conn,$stmt);
+if(mysqli_query($conn,$stmt)){
+    header("location:avaliacao.php");
+}else{
+    echo"Agendamento não realizado!";
+}
 
 //Fechando o BD
 mysqli_close($conn);
 
 //grava o agendamento no BD
-header("location:avaliacao.php");
+
 ?>
